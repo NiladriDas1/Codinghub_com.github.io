@@ -1,0 +1,70 @@
+/* Basic Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .project {
+    text-align: center;
+    padding: 50px 0;
+  
+    background: linear-gradient(to right, #ecf1ec, #e5eaf3, #eff1e4); 
+  }
+  
+  .project h1 {
+    font-size: 2em;
+    margin: 0;
+    background: linear-gradient(to right, #c9f7c9, #92b7fd, #def392); /* Background with three colors */
+    color: transparent; /* Make text invisible for background to show */
+    text-shadow:
+      -1px 0 rgba(0, 0, 0, 0.3),  /* Slight text outline for better visibility */
+      1px 0 rgba(0, 0, 0, 0.3),
+      0 1px rgba(0, 0, 0, 0.3),
+      0 -1px rgba(0, 0, 0, 0.3);
+    animation: color-change 5s ease-in-out infinite alternate; /* Animation properties */
+  }
+  
+  @keyframes color-change {
+    from { background-position: 0 0; } /* Start from the beginning of the gradient */
+    to { background-position: 100% 0; } /* Move gradient to the end */
+  }
+  
+  .project h1 i {
+    margin-left: 10px;
+    animation: float 2s ease-in-out infinite alternate; /* Floating animation for icon */
+  }
+  
+  @keyframes float {
+    from { transform: translateY(0); } /* Start at original position */
+    to { transform: translateY(2px); } /* Move up and down slightly */
+  }
+  
+  .project-info {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 5px;
+    background-color: #fce5e5; /* Project details background color */
+    background: linear-gradient(to right, #c9f7c9, #92b7fd, #def392); 
+  }
+  
+  .project-info ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .project-info li {
+    margin-bottom: 10px;
+  }
+  
+  .project-info h3 {
+    font-size: 1.5em;
+    margin-bottom: 5px;
+    animation: typing 3.5s steps(20, end) infinite alternate; /* Typing animation for titles */
+}
+
+@keyframes typing {
+  from { width: 20%; } /* Start from hidden width */
+  to { width: 100%; } /* Expand to full width */
+}

@@ -1,0 +1,99 @@
+/* Style the contact section */
+
+
+.contact-section {
+    background-color: #dad0d0;
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+  /* Style the contact container */
+  .contact-container {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 30px;
+    border: 1px solid #747070;
+    border-radius: 5px;
+  }
+  
+  /* Style the heading and paragraph */
+  .contact-section h1 {
+    margin-bottom: 20px;
+    font-size: 2em;
+  }
+  
+  .contact-section p {
+    color: #666;
+    margin-bottom: 30px;
+  }
+  
+  /* Style the contact form */
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  input,
+  textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  textarea {
+    resize: vertical;
+  }
+  
+  button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #3e8e41;
+  }
+  
+  /* Style the contact information */
+  .contact-info {
+    margin-top: 40px;
+  }
+  
+  .contact-info h3 {
+    margin-bottom: 15px;
+  }
+  
+  .contact-info ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .contact-info li {
+    margin-bottom: 10px;
+  }
+  .contact-info ul li {
+    /* Reduce font size for all list items within .contact-info ul */
+    font-size: 14px; /* Adjust as needed */
+  }
+  
+  .contact-info ul li i {
+    /* Reduce font size for icons within list items */
+    font-size: 18px; /* Adjust as needed */
+  }

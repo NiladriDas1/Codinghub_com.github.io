@@ -1,0 +1,20 @@
+.logo-container {
+    text-align: center; /* Center the logo content horizontally */
+    color: #c78282;
+  }
+  
+  .logo-container a {
+    text-decoration: none; /* Remove underline from link */
+    color: inherit; /* Inherit text color from parent element */
+  }
+  
+  .logo-container h1 {
+    margin: 0; /* Remove default margin for heading */
+    font-size: 2rem; /* Adjust font size as needed */
+    animation: logo-animation 3s ease-in-out forwards; /* Animation properties */
+  }
+  
+  @keyframes logo-animation {
+    from { opacity: 0; transform: translateY(20px); } /* Start invisible and slightly down */
+    to { opacity: 1; transform: translateY(0); } /* Fade in and move to original position */
+  }

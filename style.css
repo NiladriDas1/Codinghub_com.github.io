@@ -1,0 +1,258 @@
+*{
+
+    margin: 0;
+    padding: 0;
+    font-family: "Sedan", serif;
+    font-weight: 400;
+    font-style: italic;
+    box-sizing: border-box;
+}
+.logo-container {
+    text-align: center; /* Center the logo content horizontally */
+    color: #c78282;
+}
+  
+  .logo-container a {
+    text-decoration: none; /* Remove underline from link */
+    color: inherit; /* Inherit text color from parent element */
+  }
+  
+  .logo-container h1 {
+    margin: 0; /* Remove default margin for heading */
+    font-size: 2rem; /* Adjust font size as needed */
+    position: relative;
+    animation: float 3s ease-in-out infinite alternate;
+
+  }
+  @keyframes float {
+  from { transform: translateY(0); } /* Start at original position */
+  to { transform: translateY(10px); } /* Move up and down 10px */
+}
+.cls1{
+    min-height: 100vh;
+    width: 100%;
+    background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(nature.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+
+}
+nav img{
+    width: 150px;
+
+}
+.cls2{
+    flex: 1;
+    text-align: right;
+
+}
+.cls2 ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+
+
+
+}
+.cls2 ul li a{
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 13px;
+
+
+}
+.cls2 ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+
+
+}
+.cls2 ul li:hover::after{
+
+    width: 100%;
+
+
+}
+.cls3{
+   width: 90%;
+   color: #fff;
+   position: absolute;
+    top:50% ;
+    left: 50%;
+    transform: translate(-50%,50%);
+    text-align: center;
+
+}
+.cls3 h1{
+    font-size: 62px;
+
+}
+.cls3 p{
+margin: 10px 0 40px;
+font-size: 14px;
+color:#fff ;
+
+}
+.cls3_1{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+
+}
+.cls3_1:hover{
+    border: 1px solid #f44336;
+    background:#f44336 ;
+    transition: 1s;
+
+
+}
+nav .fa-solid{
+    display: none;
+}
+@media(max-width:700px){
+    .cls3 h1{
+        font-size: 20px;
+    
+    }
+    .cls2 ul li{
+        display: block;
+
+    }
+    .cls2{
+        position: absolute;
+        background: #f44336;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    nav .fa-solid{
+        display: block;
+        color: #d8abab;
+        margin: 10px;
+        font-size: 22;
+        cursor: pointer;
+
+    }
+    .cls2 ul{
+     padding: 30px;   
+
+    }
+}
+
+.cls3 h1 {
+  font-size: 60px;
+  color: #dda6a6; /* White color for better visibility */
+  overflow: hidden; /* Hide overflowing content initially */
+  border-right: .15em solid orange; /* Create the typing cursor effect */
+  white-space: nowrap; /* Prevent wrapping of text */
+  margin: 0; /* Remove default margin */
+  animation: typing 3.5s steps(40, end) infinite alternate; /* Animation properties */
+}
+
+@keyframes typing {
+  from { width: 0; } /* Start from hidden width */
+  to { width: 100%; } /* Expand to full width */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*support*/
+/* Overall section styling */
+.suppt {
+    text-align: center; /* Center content horizontally */
+    padding: 2rem; /* Add some padding for spacing */
+  }
+  
+  /* Heading styling */
+  .contsc {
+    font-size: 1.5rem; /* Adjust font size as needed */
+    margin-bottom: 1rem; /* Add some space after heading */
+  }
+  
+  /* Container for icons (optional) */
+  .container {
+    display: inline-block; /* Allow text to wrap around the container */
+  }
+  
+  /* Text styling within the container (optional) */
+  .overlay .text {
+    color: inherit; /* Inherit text color from parent elements */
+  }
+  
+  /* Icon styling */
+  .fa-solid,
+  .fa-brands {
+    font-size: 1.5rem; /* Set icon size */
+    margin-right: 1rem; /* Add spacing between icons */
+    color: #333; /* Set default icon color */
+    transition: color 0.2s ease-in-out; /* Smooth hover effect */
+  }
+  
+  /* Hover effect for icons */
+  .fa-solid:hover,
+  .fa-brands:hover {
+    color: #007bff; /* Change color on hover */
+  }
+  .suppt {
+    opacity: 0; /* Initially hidden */
+    animation: fadeIn 1s ease-in-out forwards;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  

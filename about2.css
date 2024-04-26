@@ -1,0 +1,81 @@
+
+
+  /* About Me section */
+  .myabout {
+    background: linear-gradient(to right, #f7cac9, #f5f5f5, #dcedfe, #94c2f0, #f1e6e6); /* Background with five colors */
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+  .about {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 30px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    position: relative; /* Enables positioning for the floating animation */
+    opacity: 0; /* Initial opacity for fade-in animation */
+    animation: fadeIn 2s ease-in-out forwards; /* Fade-in animation */
+  }
+  
+  .abh {
+    padding: auto;
+    margin-bottom: 20px;
+    font-size: 2em;
+    background-color: #549ce4; /* Light blue background */
+    color: #fff; /* White text color for better contrast */
+  }
+  
+  /* Style the image and introductory text container */
+  .aboutcls {
+    display: flex; /* Arranges elements side-by-side */
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+  }
+  
+  /* Floating image animation (unchanged) */
+  .mypic-cls {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Round image */
+    margin-bottom: 10px;
+    animation: float-image 3s ease-in-out infinite alternate;
+    background-color: #ffffff2d; /* Light pink background for the image */
+  }
+  
+  @keyframes float-image {
+    from { transform: translateY(0); }
+    to { transform: translateY(20px); } /* Moves image up and down 20px */
+  }
+  
+  /* Style and animate the text content (unchanged) */
+  .aboutcls h2,
+  .aboutcls p {
+    display: inline-block;
+    margin: 5px;
+    animation: float-text 3s ease-in-out infinite alternate;
+  }
+  
+  .intro { /* Style for the "Hi, I'm Niladri Das" text */
+    font-weight: bold;
+    margin-bottom: 5px;
+    background-color: #94c2f0; /* Light blue-green background for text */
+  }
+  
+  @keyframes float-text {
+    from { transform: translateX(0); }
+    to { transform: translateX(-10px); } /* Moves text horizontally 10px */
+  }
+  
+  /* Mouse hover fade effect for the "About" section */
+  .about:hover {
+    opacity: 1; /* Full opacity on hover */
+    transition: opacity 0.5s ease-in-out; /* Smooth transition */
+  }
+  
+  /* Fade-in animation for the "About" section */
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
